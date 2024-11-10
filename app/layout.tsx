@@ -5,21 +5,29 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anime Girl Wallpaper Generator | AI-Powered Custom Wallpapers",
-  description: "Create unique, high-quality anime girl wallpapers using advanced AI technology. Personalize your devices with custom-generated artwork instantly.",
-  keywords: "anime girl wallpaper, AI wallpaper generator, custom anime wallpaper, anime art, wallpaper creator",
+  title: "Anime Girl Wallpaper Generator | Create Beautiful Anime Girl Art",
+  description: "Generate beautiful anime girl wallpapers instantly. Create unique, high-quality anime girl art for your devices. Free anime girl wallpaper generator powered by AI.",
+  keywords: "anime girl, anime girl wallpaper, anime girl generator, anime girl art, anime girl creator, anime girl AI, cute anime girl, beautiful anime girl",
+  openGraph: {
+    title: "Create Beautiful Anime Girl Wallpapers Instantly",
+    description: "Generate unique and stunning anime girl wallpapers with our AI-powered tool. Perfect for anime girl fans!",
+    images: ['/og-image.jpg'], // 记得添加一个相关的预览图
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Create Beautiful Anime Girl Wallpapers",
+    description: "Generate unique anime girl wallpapers instantly with AI technology",
+  }
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+  }) {
   return (
     <html lang="en">
-
-        <body className={inter.className}>{children}</body>
-
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
