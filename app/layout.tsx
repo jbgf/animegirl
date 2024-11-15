@@ -7,7 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Anime Girl Wallpaper Generator | Create Beautiful Anime Girl Art",
   description: "Generate beautiful anime girl wallpapers instantly. Create unique, high-quality anime girl art for your devices. Free anime girl wallpaper generator powered by AI.",
-  keywords: "anime girl, anime girl wallpaper, anime girl generator, anime girl art, anime girl creator, anime girl AI, cute anime girl, beautiful anime girl",
+  alternates: {
+    canonical: 'https://www.anime-girl.net', // 请替换为您的实际域名
+  },
   openGraph: {
     title: "Create Beautiful Anime Girl Wallpapers Instantly",
     description: "Generate unique and stunning anime girl wallpapers with our AI-powered tool. Perfect for anime girl fans!",
